@@ -30,9 +30,10 @@ $(function() {
 
 
 function coordToMapFraction(coord) {
-	// debugger;
 	var floatVal = parseFloat(coord);
 	var wholes = parseInt(coord);
 	
-	return ((wholes * 60) + ((floatVal-wholes)*100)) / (40*60);
+	var parts = parseInt((""+coord).split(".")[1])
+	
+	return ((wholes * 60) + parts) / (40*60);
 }
