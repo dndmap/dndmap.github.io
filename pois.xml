@@ -18942,8 +18942,8 @@ Two Veilron chests. One is on the far east side with the crypt guards and the ot
 		<mobcount>0</mobcount>
 		<notes/>
 	</poi>
-	<poi id="3394" x="0.72364" y="0.84494" color="3bff00" type="1">
-		<name>MEGAAAA Troll Lord</name>
+	<poi id="3394" x="0.72364" y="0.84495" color="3bff00" type="1">
+		<name>TESTING</name>
 		<mob_id>999</mob_id>
 		<mobcount>1</mobcount>
 		<notes>Hehe worst mob ever lol =)</notes>
