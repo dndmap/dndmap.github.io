@@ -18942,35 +18942,16 @@ Two Veilron chests. One is on the far east side with the crypt guards and the ot
 		<mobcount>0</mobcount>
 		<notes/>
 	</poi>
-	<poi id="9991" x="0" y="0" color="3bff00" type="1">
+	<poi id="9991" x="0.33600" y="0.70750" color="3bff00" type="1">
 		<name>TEST MOB</name>
 		<mob_id>999</mob_id>
 		<mobcount>1</mobcount>
-		<notes>0,0</notes>
+		<notes>8.3E  13.44S</notes>
 	</poi>
-	<poi id="9992" x="0.5" y="0.5" color="3bff00" type="1">
+	<poi id="9992" x="0.52" y="0.165" color="3bff00" type="1">
 		<name>TEST MOB</name>
 		<mob_id>999</mob_id>
 		<mobcount>1</mobcount>
-		<notes>0.5, 0.5</notes>
-	</poi>
-	<poi id="9993" x="1" y="1" color="3bff00" type="1">
-		<name>TEST MOB</name>
-		<mob_id>999</mob_id>
-		<mobcount>1</mobcount>
-		<notes>1, 1</notes>
-	</poi>
-	
-	<poi id="9994" x="-0.5" y="-0.5" color="3bff00" type="1">
-		<name>TEST MOB</name>
-		<mob_id>999</mob_id>
-		<mobcount>1</mobcount>
-		<notes>-0.5, -0.5</notes>
-	</poi>
-	<poi id="9995" x="-1" y="-1" color="3bff00" type="1">
-		<name>TEST MOB</name>
-		<mob_id>999</mob_id>
-		<mobcount>1</mobcount>
-		<notes>-1, -1</notes>
+		<notes>13.4W  20.8S</notes>
 	</poi>
 </dfmap>
