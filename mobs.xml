@@ -1786,10 +1786,10 @@
 		<skin>bile [Q1 bile], zombie corpseflesh [Q2 corpseflesh]</skin>
 	</mob>
 		<mob id="999">
-		<name>TESTING mobs.xml</name>
+		<name>TEST MOB</name>
 		<difficulty>11</difficulty>
 		<notes/>
-		<loot>xDDDD 20 gold, 2 egg, bread, plate chest, troll amulet, troll lord sallet, veilron key</loot>
-		<skin>xDDDD 3 bone [Q1 bone], 2 troll blood [Q2 blood], claw [Q1 claw]</skin>
+		<loot></loot>
+		<skin></skin>
 	</mob>
 </dfmap>
