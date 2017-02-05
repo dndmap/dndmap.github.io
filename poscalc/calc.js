@@ -9,7 +9,7 @@ $(function() {
 			y = 0; //default all N values as 0S
 		} else {
 			var latVal = parseFloat(latPart.slice(0, -1));
-			y = coordToMapFraction(latVal);
+			y = latCoordToMapFraction(latVal);
 		}
 				
 		var x;
@@ -29,11 +29,11 @@ $(function() {
 })
 
 
-function coordToMapFraction(coord) {
+function latCoordToMapFraction(coord) {
 	var floatVal = parseFloat(coord);
 	var wholes = parseInt(coord);
 	
-	var parts = parseInt((""+coord).split(".")[1])
+	var parts = 7 + parseInt((""+coord).split(".")[1])
 	
 	return ((wholes * 60) + parts) / (40*60);
 }
