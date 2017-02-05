@@ -48,7 +48,7 @@ function eastCoordToMapFraction(coord) {
 	var floatVal = parseFloat(coord);
 	var wholes = parseInt(coord)+20;
 	
-	var parts = 7 + parseInt((""+coord).split(".")[1])
+	var parts = parseInt((""+coord).split(".")[1])
 	
 	return ((wholes * 60) + parts) / (40*60);
 }
