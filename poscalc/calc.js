@@ -36,7 +36,7 @@ function latCoordToMapFraction(coord) {
 function westCoordToMapFraction(coord) {
 	var wholes = 19-parseInt(coord);
 	
-	var parts = (60 - parseInt((""+coord).split(".")[1])) + 10;
+	var parts = (60 - parseInt((""+coord).split(".")[1])) + 8;
 	
 	return ((wholes * 60) + parts) / (40*60);
 }
