@@ -1785,11 +1785,4 @@
 		<loot>10 gold, 2 ashes</loot>
 		<skin>bile [Q1 bile], zombie corpseflesh [Q2 corpseflesh]</skin>
 	</mob>
-		<mob id="999">
-		<name>TEST MOB</name>
-		<difficulty>11</difficulty>
-		<notes/>
-		<loot></loot>
-		<skin></skin>
-	</mob>
 </dfmap>
