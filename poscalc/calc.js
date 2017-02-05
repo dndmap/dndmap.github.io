@@ -6,7 +6,7 @@ $(function() {
 		
 		var y;
 		if(latPart.substr(latPart.length-1) === "N") {
-			y = 0; //default all N values as 0S
+			y = 0.003; //default all N values as 0S.. sort of
 		} else {
 			y = latCoordToMapFraction(latPart.slice(0, -1));
 		}
@@ -14,8 +14,7 @@ $(function() {
 		var x;
 		var longSign = longPart.substr(longPart.length-1);
 		if(longSign === 'E') {
-			var longVal = longPart.slice(0, -1);
-			x = (parseFloat(longVal)+20)/40;
+			x = eastCoordToMapFraction(longPart.slice(0, -1));
 		} else if(longSign === 'W') {
 			var longVal = longPart.slice(0, -1);
 			x = (20-parseFloat(longVal))/40;
@@ -27,10 +26,27 @@ $(function() {
 	});
 })
 
-
 function latCoordToMapFraction(coord) {
 	var floatVal = parseFloat(coord);
 	var wholes = parseInt(coord);
+	
+	var parts = 7 + parseInt((""+coord).split(".")[1])
+	
+	return ((wholes * 60) + parts) / (40*60);
+}
+
+function westCoordToMapFraction(coord) {
+	var floatVal = parseFloat(coord);
+	var wholes = parseInt(coord);
+	
+	var parts = 7 + parseInt((""+coord).split(".")[1])
+	
+	return ((wholes * 60) + parts) / (40*60);
+}
+
+function eastCoordToMapFraction(coord) {
+	var floatVal = parseFloat(coord);
+	var wholes = parseInt(coord)+20;
 	
 	var parts = 7 + parseInt((""+coord).split(".")[1])
 	
