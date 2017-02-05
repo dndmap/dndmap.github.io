@@ -26,7 +26,6 @@ $(function() {
 })
 
 function latCoordToMapFraction(coord) {
-	var floatVal = parseFloat(coord);
 	var wholes = parseInt(coord);
 	
 	var parts = 7 + parseInt((""+coord).split(".")[1]);
@@ -35,16 +34,14 @@ function latCoordToMapFraction(coord) {
 }
 
 function westCoordToMapFraction(coord) {
-	var floatVal = parseFloat(coord);
 	var wholes = 19-parseInt(coord);
 	
-	var parts = 7 + (60 - parseInt((""+coord).split(".")[1]));
+	var parts = (60 - parseInt((""+coord).split(".")[1]));
 	
 	return ((wholes * 60) + parts) / (40*60);
 }
 
 function eastCoordToMapFraction(coord) {
-	var floatVal = parseFloat(coord);
 	var wholes = parseInt(coord)+20;
 	
 	var parts = 7 + parseInt((""+coord).split(".")[1]);
