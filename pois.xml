@@ -18954,7 +18954,7 @@ Two Veilron chests. One is on the far east side with the crypt guards and the ot
 		<mobcount>1</mobcount>
 		<notes>13.4W  20.8S</notes>
 	</poi>
-	<poi id="9993" x="0.09" y="0.27917" color="3bff00" type="1">
+	<poi id="9993" x="0.09" y="0.29042" color="3bff00" type="1">
 		<name>TEST MOB</name>
 		<mob_id>999</mob_id>
 		<mobcount>1</mobcount>

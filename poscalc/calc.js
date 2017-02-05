@@ -8,8 +8,7 @@ $(function() {
 		if(latPart.substr(latPart.length-1) === "N") {
 			y = 0; //default all N values as 0S
 		} else {
-			var latVal = parseFloat(latPart.slice(0, -1));
-			y = latCoordToMapFraction(latVal);
+			y = latCoordToMapFraction(latPart.slice(0, -1));
 		}
 				
 		var x;
