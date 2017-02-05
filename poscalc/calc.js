@@ -16,8 +16,7 @@ $(function() {
 		if(longSign === 'E') {
 			x = eastCoordToMapFraction(longPart.slice(0, -1));
 		} else if(longSign === 'W') {
-			var longVal = longPart.slice(0, -1);
-			x = (20-parseFloat(longVal))/40;
+			x = westCoordToMapFraction(longPart.slice(0, -1));
 		} else {
 			alert("Invalid format");
 		}
@@ -30,16 +29,16 @@ function latCoordToMapFraction(coord) {
 	var floatVal = parseFloat(coord);
 	var wholes = parseInt(coord);
 	
-	var parts = 7 + parseInt((""+coord).split(".")[1])
+	var parts = 7 + parseInt((""+coord).split(".")[1]);
 	
 	return ((wholes * 60) + parts) / (40*60);
 }
 
 function westCoordToMapFraction(coord) {
 	var floatVal = parseFloat(coord);
-	var wholes = parseInt(coord);
+	var wholes = 20-parseInt(coord);
 	
-	var parts = 7 + parseInt((""+coord).split(".")[1])
+	var parts = 7 + (60 - parseInt((""+coord).split(".")[1]));
 	
 	return ((wholes * 60) + parts) / (40*60);
 }
@@ -48,7 +47,7 @@ function eastCoordToMapFraction(coord) {
 	var floatVal = parseFloat(coord);
 	var wholes = parseInt(coord)+20;
 	
-	var parts = 7 + parseInt((""+coord).split(".")[1])
+	var parts = 7 + parseInt((""+coord).split(".")[1]);
 	
 	return ((wholes * 60) + parts) / (40*60);
 }
